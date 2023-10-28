@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack Sachin</title>
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/047fa0413f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- code reference from https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/ -->
+    <div class="wrapper">
+        <div class="container">
+            <div id="gameArena">
+                <h1>Whack Sachin</h1>
+                <div class="board">
+                    <div class="controls">
+                        <a href="#" id="startBtn"><i class="fas fa-play"></i></a>
+                        <a href="#" id="stopBtn"><i class="fas fa-stop"></i></a>
+                        
+                    </div>
+                    <div>
+                        <!-- score  -->
+                        <p>Score: <span id="score">0</span> </p>
+                    </div>
+                    <div>
+                        <!-- time left -->
+                        <p>Seconds Left: <span id="timeLeft">20</span></p>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalContainer" class="modal">
+            <div class="content">
+                <h2 id="message">Game Over! Your current score is 0</h2>
+                <a href="#" id="restartBtn"><i class="fas fa-redo-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
